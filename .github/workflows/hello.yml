@@ -8,6 +8,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - name: Install pytest
+  run: pip install pytest
 
-      - name: Run Python script
-        run: python hello.py
+- name: Run tests
+  run: pytest
+
+   
+
+
+
